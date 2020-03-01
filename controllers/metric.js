@@ -22,9 +22,7 @@ exports.show = (req,res) => {
     let content = helper.get();
     content = helper.filterAndSave(content);
     content = content.filter(x => x.key === key)
-    console.log(content);
     let sum = content.reduce((s, x)=> s + parseInt(x.value), 0);
-    console.log(sum);
     res.json(Math.round(sum));
   } catch (e) {
     res.status(400).send(e.message);
