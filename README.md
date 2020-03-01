@@ -4,11 +4,12 @@
 This Project is a node sum metric service where you can make 2 http petitions. <br>
 
 ### POST
-<b>Format:</b> /{key}/  <b>Body:</b> {"value": (number) }
-<b>Example URL:</b> /active_visitors <b>Example Body:</b> {"value": 15 }
+<b>Format:</b> /{key}/  <b>Body:</b> {"value": (number) } <br>
+<b>Example URL:</b> /visitors <b>Example Body:</b> {"value": 15 }
 
 ### GET
-<b>Format:</b> /{key}/sum
+<b>Format:</b> /{key}/sum <br>
+<b>Example URL:</b> /visitors/sum
 
 ## Local Install
 
