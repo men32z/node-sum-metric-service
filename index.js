@@ -6,10 +6,6 @@ const routes = require('./routes');
 const PORT = 4000;
 const app = express();
 
-routes.get('/', () => {
-  console.log("hola");
-});
-
 app.use(cors());
 app.use(bodyParser.json());
 
